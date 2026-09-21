@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
 
-    image: data-library-pipeline:latest  # just a name for the built image
+    image: data-library-analytics:latest  # just a name for the built image
 
     environment:
       APP_ENV: ${APP_ENV:-}
