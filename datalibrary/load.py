@@ -13,7 +13,7 @@ load_dotenv()  # take environment variables from .env.
 
 DB_HOST = os.getenv("DB_HOST")
 DATABASE = os.getenv("DB_NAME")
-USERNAME = os.getenv("DB_USERNAME")
+USERNAME = os.getenv("DB_USER")
 PASSWORD = os.getenv("DB_PASSWORD")
 
 conn_str = f"mssql+pyodbc://{USERNAME}:{PASSWORD}@{DB_HOST}/{DATABASE}?driver=ODBC+Driver+18+for+SQL+Server&Encrypt=yes&TrustServerCertificate=yes"
