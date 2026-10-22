@@ -29,6 +29,5 @@ RUN uv sync --frozen
 COPY . .
 
 # Runtime default environment for main.py arg
-ENV APP_ENV=hpc_dev
 
 CMD ["sh", "-c", "uv run python main.py --db"]

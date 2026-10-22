@@ -96,7 +96,7 @@ class DataLibrary:
         """Get package list"""
         url = BASE_URL + ENDPOINTS["all_surveys_code"]
         response = self.get_response(url, params=limit)
-        data = response["result"]
+        data = response["result"] 
         return data
 
     def get_surveys_with_resources(self, limit=None):

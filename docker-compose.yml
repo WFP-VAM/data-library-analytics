@@ -8,7 +8,6 @@ services:
     image: data-library-analytics:latest  # just a name for the built image
 
     environment:
-      APP_ENV: ${APP_ENV:-}
 
       DATALIB_API_KEY: ${DATALIB_API_KEY:-}
       DB_HOST: ${DB_HOST:-}
